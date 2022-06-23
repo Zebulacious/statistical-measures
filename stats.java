@@ -14,15 +14,33 @@ public class stats {
 
             switch(checker) {
                 case 1:
-                        System.out.println("Hilarious");
+                        calcBasic(scnr);
+                        System.out.println("Hilarious\n");
                     break;
                 case 2:
-                        System.out.println("Just placeholder text");
+                        System.out.println("Just placeholder text\n");
                     break;
                 default:
-                        System.out.print("Oops! That wasn't an option. Please renter");
+                        System.out.println("Oops! That wasn't an option. Please renter\n");
 
             }
         }    
+    }
+
+    public static void calcBasic(Scanner scnr) {
+            double mean;
+            double median;
+            double mode;
+
+            String str = scnr.nextLine();
+            String[] arrOfStr = str.split(",");
+            int[] numbers = new int[str.length()];
+
+            for(int i = 0; i < arrOfStr.length; i++) {
+                numbers[i] = Integer.parseInt(arrOfStr[i]);
+                System.out.print("hi");
+            }
+
+
     }
 }
